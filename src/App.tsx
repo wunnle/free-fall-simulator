@@ -4,6 +4,7 @@ import { Play, Pause, RotateCcw } from 'lucide-react';
 import { translations, type Language } from './translations';
 import { planetGravities, type PlanetKey } from './constants';
 import ReferenceHeightBands from './components/ReferenceHeightBands';
+import { Analytics } from "@vercel/analytics/react"
 
 const labelStyle = { fontSize: 12, fontWeight: '500', fill: '#374151' };
 const tickStyle = { fontSize: 12, fill: '#9b9c9d' };
@@ -191,6 +192,8 @@ export default function FreeFallSimulator() {
   }, [h1, h2, isRunning, isFinished, time]);
 
   return (
+    <>
+    <Analytics />
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-4 lg:p-6">
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center mb-6 mt-4 gap-4">
@@ -572,5 +575,6 @@ export default function FreeFallSimulator() {
         </footer>
       </div>
     </div>
+    </>
   );
 }
