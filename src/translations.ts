@@ -55,7 +55,7 @@ export const translations = {
   },
   tr: {
     ball: "Cisim",
-    title: "Serbest Düşüş Simülatörü",
+    title: "Serbest Düşme Simülatörü",
     subtitle: "Düşen cisimlerin fiziğini keşfedin",
     parameters: "Parametreler",
     objectProperties: "Cisim Özellikleri",
