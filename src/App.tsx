@@ -234,7 +234,7 @@ export default function FreeFallSimulator() {
                       <input
                         type="range"
                         min="1"
-                        max="50"
+                        max="100"
                         step="0.5"
                         value={m1}
                         onChange={(e) => setM1(parseFloat(e.target.value))}
@@ -278,7 +278,7 @@ export default function FreeFallSimulator() {
                       <input
                         type="range"
                         min="1"
-                        max="50"
+                        max="100"
                         step="0.5"
                         value={m2}
                         onChange={(e) => setM2(parseFloat(e.target.value))}
@@ -518,11 +518,12 @@ export default function FreeFallSimulator() {
         </div>
 
         {/* Footer */}
-        <footer className="mt-12 pt-6 pb-1 border-t border-indigo-200">
+        <footer className="mt-12 pt-6 pb-1">
           <div className="text-center text-gray-600 space-y-3">
             {/* Logo */}
-            <div className="flex justify-center -mt-10">
-              <div>
+            <div className="flex justify-center items-center -mt-10">
+              <div className="flex-1 h-px bg-gray-300"></div>
+              <div className="mx-4">
                 <svg width="32" height="14" viewBox="0 0 48 21" fill="none" xmlns="http://www.w3.org/2000/svg" className="inline-block">
                   <path d="M24 12L32 11.7L24 0.4V12Z" fill="#0D79BE" />
                   <path d="M24 12L16 11.7L24 0.4V12Z" fill="#3790BB" />
@@ -531,6 +532,7 @@ export default function FreeFallSimulator() {
                   <path d="M24 12L41 21H7L24 12Z" fill="#ED7723" />
                 </svg>
               </div>
+              <div className="flex-1 h-px bg-gray-300"></div>
             </div>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4 pt-1">
               <div className="flex items-center gap-0 text-xs text-gray-500">
